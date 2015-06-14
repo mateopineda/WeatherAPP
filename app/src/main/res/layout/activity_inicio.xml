@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="g1.aplicaciones.com.weatherapp.MainActivity" >
+
+    <EditText
+        android:id="@+id/obtenerCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/obtenerCiudad"
+        android:layout_centerHorizontal="true"
+        android:text="Request" />
+
+    <TextView
+        android:id="@+id/lblCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRequest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Ciudad"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lblTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblCiudad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Temperatura"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblTemperatura"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Descripcion"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_below="@+id/lblDescripcion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+</RelativeLayout>
